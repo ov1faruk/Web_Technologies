@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Passport Application Form</title>
+  </head>
+  <body>
+    <form action="submit_form.php" method="post">
+      <h2 align = "center" ; style="background-color: aquamarine;">Passport Application Form</h2>
+      <img align ="right" src="https://blog.decisionmakerbd.net/wp-content/uploads/sites/2/2020/06/Bangladeshi_E_Passport.jpg" ; height="300 px" width="200px" alt="Passport">
+      <br>
+      <br>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+      <br>
+      <br>
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+        <br>
+        <br>
+        
+      <label for="middle-name">Middle Name:</label>
+      <input type="text" id="middle-name" name="middle-name">
+      <br>
+      <br>
+      <label for="upload-photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo-upload" required>
+      <br>
+      <br>
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+      <br>
+      <br>
+      <label for="birthplace">Place of Birth:</label>
+      <input type="text" id="birthplace" name="birthplace" required>
+      <br>
+      <br>
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" name="nationality" required>
+      <br>
+      <br>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <br>
+      <label for="phone-number">Phone Number:</label>
+      <input type="tel" id="phone-number" name="phone-number" placeholder="00000-000000" required>
+      <br>
+      <br>
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" required>
+      <label for="other">Other</label>
+      <br>
+      <br>
+
+      <label for="marital-status">Marital Status:</label>
+      <select id="marital-status" name="marital-status" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+        <option value="widowed">Widowed</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="occupation">Occupation:</label>
+      <input type="text" id="occupation" name="occupation" required>
+      <br>
+      <br>
+      <label for="employer">Employer:</label>
+      <input type="text" id="employer" name="employer" required>
+      <br>
+      <br>
+      <input style="background-color: rgba(10, 216, 55, 0.534);" type="submit" value="Submit">
+      <input style="background-color: rgba(240, 41, 41, 0.459);" type="reset">
+    </form>
+  </body>
+</html>
