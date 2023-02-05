@@ -56,10 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     echo $gender;
   }
-  $checkbox = $_REQUEST['checkbox'];
-   $hobby1=hobby1;
+  $checkbox = $_REQUEST['hobby1'];
+   $hobby1='';
    if (isset($hobby1)){
-    echo "'hobby1'";
+    echo "'$hobby1'";
    }
   
   $name = $_REQUEST['fname'];
