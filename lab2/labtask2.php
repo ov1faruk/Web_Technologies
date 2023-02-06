@@ -18,7 +18,7 @@
       <input type="checkbox" id="hobby1" name="hobby1" value="Singing">
   <label for="hobby1"> Singing</label><br>
   <input type="checkbox" id="hobby2" name="hobby2" value="Dancing">
-  <label for="vehicle2"> Dancing</label><br>
+  <label for="hobby2"> Dancing</label><br>
   <input type="checkbox" id="hobby3" name="hobby3" value="Playing">
   <label for="hobby3"> Playing</label>
   <br>
@@ -56,23 +56,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     echo $gender;
   }
-  $checkbox = $_REQUEST['hobby1'];
-   $hobby1='';
-   if (isset($hobby1)){
-    echo "'$hobby1'";
-   }
+ # $hobby1 = $_REQUEST['hobby1'] ;
+  if (isset($_POST['hobby1'])) 
+    echo "Singing";
   
-  $name = $_REQUEST['fname'];
-  if (empty($name)) {
-    echo "Name is empty";
+
+   #$hobby2 = $_REQUEST['hobby2'] ;
+  if (isset($_POST['hobby2'])) 
+    echo "Dancing";
+  
+   #$hobby3 = $_REQUEST['hobby3'] ;
+  if (isset($_POST['hobby3']) ) 
+   echo "Playing";
+  
+  
+  $marital_status = $_REQUEST['marital-status'];
+  if (empty($marital_status)) {
+    echo "";
   } else {
-    echo $name;
+    echo $marital_status;
   }
-  $name = $_REQUEST['fname'];
+  $address = $_REQUEST['address'];
   if (empty($name)) {
-    echo "Name is empty";
+    echo "";
   } else {
-    echo $name;
+    echo $address;
   }
 }
 ?>
