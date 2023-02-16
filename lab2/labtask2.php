@@ -8,7 +8,7 @@
 <legend> <h2>Registration Form </h2></legend>
 <label for="fname">Name:</label>
    <input type="text" name="fname">
-   <span class="error">* <?php echo $nameErr ;?></span>
+   
    <label for="femail">Email:</label>
    <input type="text" name="femail">
    <br>
@@ -59,24 +59,26 @@
 
 
 <?php
-$nameErr ="";
+$nameErr = $emailErr = $genderErr = $websiteErr = $bloodgroup= "";
+
+$name = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["fname"])) {
-      $nameErr = "Name is required";
-    } else {
-      $name = $_POST["fname"];
-      // check if name only contains letters and whitespace
-      if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-        $nameErr = "Only letters and white space allowed";
-      }
-    }
+  $name = $_REQUEST ["fname"];  
+  if (!preg_match ("/^[a-zA-z]*$/", $name) ) {  
+      $ErrMsg = "Only alphabets and whitespace are allowed.";  
+              echo $ErrMsg;  
+  } else {  
+      echo "Name: " . $name . "<br>";  
+  } 
 
   $email = $_POST ["femail"];  
         $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^";  
         if (!preg_match ($pattern, $email) ){  
-            $ErrMsg = "Email is not valid.";  
-                    echo $ErrMsg;  
+            $ErrMsg = "Email is not valid."; 
+            
+                    echo $ErrMsg; 
+                    echo "<br>"; 
         } else {  
             echo "Email: " . $email . "<br>";  
         } 
@@ -88,35 +90,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($gender)) {
     echo "Gender is empty";
   } else {
-    echo $gender;
+    echo "Gender:". $gender."<br>";
   }
  # Degree
 
   if (isset($_POST['ssc'])) 
-    echo "SSC";
+    echo "SSC <br>";
+   
   
 
    #$hobby2 = $_REQUEST['hobby2'] ;
   if (isset($_POST['hsc'])) 
-    echo "HSC";
+    echo "HSC <br>";
+    
   
    #$hobby3 = $_REQUEST['hobby3'] ;
   if (isset($_POST['Bsc']) ) 
-   echo "Bsc";
+   echo "Bsc <br>";
+  
 
    if (isset($_POST['Msc']) ) 
-   echo "Msc";
+   echo "Msc <br>";
+   
   
   
   $bloodgroup = $_REQUEST['bloodgroup'];
   if (empty($bloodgroup)) {
     echo "";
   } else {
-    echo $bloodgroup;
+    echo "BloodGroup: " .$bloodgroup;
   }
-  
 }
+  
+
 ?>
+
+
 
 </body>
 </html>
