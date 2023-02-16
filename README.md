@@ -4,5 +4,9 @@
 <img src="https://raw.githubusercontent.com/ov1faruk/Web_Technologies/main/lab1/Resume_Labtask1.png" height="540px" width="1920px" alt="">
 <a href="https://github.com/ov1faruk/Web_Technologies/blob/main/lab1/lab1(RESUME).html">>>View Source Code</a>
 
+<h2>Lab-2:<h2> 
+<img src="https://raw.githubusercontent.com/ov1faruk/Web_Technologies/main/lab2/lab2.png" height="540px" width="1920px" alt="">
+<a href="https://github.com/ov1faruk/Web_Technologies/blob/main/lab2/labtask2.php">>>View Source Code</a>
+
 
 
