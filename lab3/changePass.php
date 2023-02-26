@@ -49,4 +49,8 @@
             ?>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 040aab1e432122ea7be0fcb40ab86fc9b428dc8f
