@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+   
+  }
+  
+ 
+  
+  h1 {
+    text-align: center;
+  }
+  
+
+  
+  .shoe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .img {
+    
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 20px;
+    transition: transform .2s;
+  }
+  
+  .product h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .product p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .logout{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ce2830;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .cart{
+   
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #14c99c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .message{
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #acfdac;
+    color: #000000;
+  }
+  .img:hover {
+    transform: scale(1.5);
+  }
+  .cart:hover{
+    background-color: #299229;
+    color: #000000;
+  }
